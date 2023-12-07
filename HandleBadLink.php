@@ -6,19 +6,19 @@ class HandleBadLink
     private  function MakeTheEditLink($NIDExploded, $DIV){
         switch ([$NIDExploded[1], $DIV]) {
             case ['lp', 'land pride']:
-                return "https://cms.landpride.com/node/$NIDExploded[0]/edit";
+                return "https://landpride.com/node/$NIDExploded[0]/edit";
                 break;
             case ['gp', 'great plains']:
-                return "https://cms.greatplainsag.com/en/node/$NIDExploded[0]/edit";
+                return "https://greatplainsag.com/en/node/$NIDExploded[0]/edit";
                 break;
             case ['da', 'land pride']:
-                return "https://dealers.landpride.com/dealer_access/content/en/node/$NIDExploded[0]/edit";
+                return "https://landpride.com/dealer_access/content/en/node/$NIDExploded[0]/edit";
                 break;
             case ['da', 'great plains']:
-                return "https://dealers.greatplainsmfg.com/dealer_access/content/en/node/$NIDExploded[0]/edit";
+                return "https://greatplainsmfg.com/dealer_access/content/en/node/$NIDExploded[0]/edit";
                 break;
             default:
-                return "https://cms.landpride.com/node/$NIDExploded[0]/edit";
+                return "https://landpride.com/node/$NIDExploded[0]/edit";
         }
 
     }
